@@ -1,0 +1,42 @@
+* What is SSL : 
+
+1. It stand for secure socket layer.
+2. it is used to encrypt our communication when we are using Any website which is under secure SSL or https.
+3. SSL Certificates: 
+   SSL certificates are used to establish and authenticate the identity of the server. These certificates are issued by Certificate Authorities (CAs) and contain the server's public key and the server's identity.
+
+4. SSL/TLS: SSL has been succeeded by Transport Layer Security (TLS), which is a more secure and efficient protocol. However, the term SSL is still commonly used to refer to both SSL and TLS.
+
+summary :  
+SSL (Secure Sockets Layer) is a standard security technology for establishing an encrypted link between a server and a client—typically a web server (website) and a browser, or a mail server and a mail client (e.g., Outlook). SSL ensures that all data transmitted between the web server and browser remains encrypted and therefore private and secure.
+
+* what type of key and crt involved in this. 
+
+
+
+FLOW : 
+
+How SSL Works :
+
+ Handshake Process:
+
+ The client sends a "ClientHello" message to the server, initiating a connection.
+ The server responds with a "ServerHello" message, which includes its SSL certificate.
+ The client verifies the server’s certificate with the CA that issued it.
+ The client and server agree on an encryption method and a shared secret key for the session.
+ 
+ Data Encryption:
+
+ Once the handshake is complete, the client and server use the shared secret key to encrypt the data they exchange.
+ This encryption ensures that the data is secure and private during transmission.
+ 
+ 
+ 
+* what is csr  :
+
+ The CSR contains information that the CA uses to create the certificate, which binds together a public key with an identity (such as the name of the organization, the domain name, and the location). Here is a breakdown of what a CSR typically contains:
+ 
+ 
+* What is CA-bundle : 
+
+ CA bundle (Certificate Authority bundle) is a file that contains a collection of root and intermediate certificates that represent the chain of trust for a particular SSL certificate. These certificates are used to validate the SSL certificate presented by a server during an SSL handshake, ensuring that the certificate can be trusted.
